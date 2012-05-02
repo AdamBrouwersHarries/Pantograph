@@ -1,17 +1,5 @@
 Pantograph - A C toolkit for simple cross platform graphics.
 
-Uses the GLFW and OpenGL libraries.
-
 NOTES FOR USERS:
--Must already have opengl headers and libraries installed
--Need to build glfw library to be able to link it.
-
-POST ON STACKOVERFLOW:
-Thanks to the people at #glfw I've managed to find a somewhat hackish solution...
-
-If you flush the input buffer directly after closing the glfw window scanf will start to work again. I'm not entirely sure why, but it seems to work for now, so I'm satsfied.
-
-The code I'm using to do it is as follows:
-
-    int ch;
-    while ((ch = getchar()) != '\n' && ch != EOF);
+-uses the grx20 graphics library
+-need to compile and link the required libraries

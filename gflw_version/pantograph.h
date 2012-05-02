@@ -41,7 +41,10 @@ void p_end_render()
 void p_close_window()
 {
 	glfwCloseWindow();
-	glfwTerminate();
 	int ch;
+	//char buf[BUFSIZ];
 	while ((ch = getchar()) != '\n' && ch != EOF); //flush the input buffer so we can continue to use scanf
+	//fgets(buf, sizeof(buf), stdin);
+	glfwTerminate();
+	
 }
